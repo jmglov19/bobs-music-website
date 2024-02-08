@@ -70,6 +70,12 @@ header{
 	width: 90%;
 }
 
+#logo-container{
+	width: 9%; 
+	margin-left: 15%; 
+	margin-top: 10px;
+}
+
 nav{
 	display: inline-block;
 	padding: 0;
@@ -108,11 +114,7 @@ li {
 	border: 1px solid whitesmoke;
 }
 
-@media screen and (max-width: 800px) {
-	.showcase, .showcasepics {
-	  width: 93%; /* The width is 100%, when the viewport is 800px or smaller */
-	}
-  }
+
 #options-sect{
 	width: 60%;
 	margin-left: 22.5%;
@@ -144,6 +146,13 @@ li {
 
 
 
+
+
+
+/*
+ info for gallarey
+
+*/
 * {
 	box-sizing: border-box;
   }
@@ -285,6 +294,13 @@ p{
 	width: 40%;
 }
 
+#repair-text{
+	width: 60%; 
+	float: right; 
+	color: white;  
+	margin-bottom: 20%;
+}
+
 #location{
 	background-color: #393939;
 	width: 100%;
@@ -337,8 +353,78 @@ footer{
 	background-color: #393939;
 }
 
+#flyer{
+	width: 60%;
+}
+
 .tabs{
 	color: white;
 	font-size: 1.5vw;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {
+	.showcase, .showcasepics {
+	  width: 93%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+	li{
+		font-size: 2.5vw;
+	}
+	#front{
+		width: 95%; 
+		margin-left: 2.5%;
+	}
+	#logo-container{
+		margin-left: 3%;
+		width: 20%;
+	}
+	#logo{
+		width: 100%;
+	}
+	
+	nav{
+		width: 80%;
+		padding-left: 5%;
+		
+	}
+	ul{
+		padding:0%;
+	}
+	.tabs{
+		font-size: 3vw;
+	}
+	#repair-sect{
+		display: block;
+	}
+	#repair-pic{
+		width: 100%;
+	}
+	#repair-text{
+		width: 100%;
+		float: none;
+	}
+	#renlogo{
+		width: 10%;
+	}
+	
+	h1{
+		font-size: 5vw;
+	}
+	h2{
+		font-size: 4vw;
+	}
+	p{
+		font-size: 3vw;
+	}
+	ol{
+		display: flex;
+		padding-left: 2%;
+	}
+	#flyer{
+		width: 85%;
+	}
+	#installs{
+		display: inline-block;
+	}
+
+  }
