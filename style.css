@@ -1,0 +1,344 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 2;
+	border: 0;
+	font: inherit;
+    font-family: Arial;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: inline-block;
+}
+body {
+	line-height: 2;
+    font-size: 20px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face{
+	font-family: 'HistoraBeralin';
+	src: url("fonts/HistoraBeralin.otf") format("opentype");
+}
+
+
+/*
+Styles for header
+*/
+
+
+header{
+	text-align: center; 
+    overflow: hidden;
+    display: inline-block;
+    background-color: #393939;
+    width:100%;
+	height: 30%;
+    margin: 0;
+	box-shadow: 0px 3px rgba(34, 34, 34, 0.538);
+	display: flex;
+	align-items: flex-end;
+}
+
+#logo{
+	width: 90%;
+}
+
+nav{
+	display: inline-block;
+	padding: 0;
+	width: 60%;
+	color: white;
+}
+
+li {
+    display: inline-block;
+    padding: 3px;
+    font-size: 1vw;
+    margin: 1%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#front{
+    width: 50%;
+    margin-left: 24%;
+    padding: 1%;
+    background-color: black;
+}
+
+#showcase{
+	width: 50%;
+	margin-left: 24%;
+	background-color: rgb(45, 45, 47);
+	border-radius: 10px;
+	box-shadow: 0px 10px rgb(100, 99, 99);
+}
+
+.showcasepics{
+	width: 25%;
+	margin: 3.4%;
+	border-radius: 15px;
+	border: 1px solid whitesmoke;
+}
+
+@media screen and (max-width: 800px) {
+	.showcase, .showcasepics {
+	  width: 93%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+  }
+#options-sect{
+	width: 60%;
+	margin-left: 22.5%;
+}
+
+.opt{
+	width: 29%;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+
+#banner{
+	display: inline-block;
+	width: 100%;
+	background-color: black;
+}
+
+#bannerpic{
+	width: 100%;	
+}
+
+#bannertext{
+	color: white;
+	width: 30%;
+	float: right;
+	
+	
+}
+
+
+
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+	position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+	width: 30%;
+	margin-left: 35%;
+	position: relative;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 35%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+	margin-left: 35%;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	margin-right: 35%;
+  }
+
+  .left{
+	left:100;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+.parent {
+	/* border: 1px solid black;
+	*/
+		margin: 1rem;
+		
+		text-align: center;
+	}
+ 
+ .child {
+	display: inline-block;
+	/*border: 1px solid red;
+	*/
+	padding: 1rem 1rem;
+	vertical-align: middle;
+	width: 40%;
+ }
+
+
+h1{
+	font-size: 3vw;
+}
+
+h2{
+	font-size: 1.5vw;
+}
+
+p{
+	font-size: 1vw;
+}
+
+#renLogo{
+	width: 30%;
+}
+
+#repair-sect{
+	background-color: #393939; 
+	width: 100%; 
+	display: flex;
+	align-items: flex-end;
+}
+
+#repair-pic{
+	width: 40%;
+}
+
+#location{
+	background-color: #393939;
+	width: 100%;
+	text-align: center;
+	color: white;
+	
+}
+
+footer{
+
+    overflow: hidden;
+    display: flex;
+    background-color: #dee2e5;
+    bottom: 0;
+    width: 100%;
+    font-size: 1vm;
+}
+
+.footer{
+	width: 30%; 
+	margin-left: 2%;
+}
+
+#rental-banner{
+	display: flex;
+	width: 100%;
+	align-items: flex-end;
+	background-image: url(imgs/vio.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	text-align: center;
+	
+}
+
+#rental-banner-text{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	width: 70%;
+	padding: 3%;
+	background-color: rgba(255,255,255,0.9);
+
+}
+
+#rental-sheet{
+	width: 100%;
+	text-align: center;
+	display: block;
+	background-color: #393939;
+}
+
+.tabs{
+	color: white;
+	font-size: 1.5vw;
+	text-decoration: none;
+}
