@@ -363,6 +363,10 @@ footer{
 	text-decoration: none;
 }
 
+#maps{
+	width: 60%;
+}
+
 @media screen and (max-width: 800px) {
 	.showcase, .showcasepics {
 	  width: 93%; /* The width is 100%, when the viewport is 800px or smaller */
@@ -425,6 +429,9 @@ footer{
 	}
 	#installs{
 		display: inline-block;
+	}
+	#maps{
+		width: 90%;
 	}
 
   }
