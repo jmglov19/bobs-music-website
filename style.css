@@ -436,8 +436,11 @@ footer{
 	#repair-sect{
 		display: block;
 	}
-	#repair-pic{
-		width: 100%;
+	#repair-pic{	
+		width: 100%; 
+		height: 250px; 
+		object-fit: cover;
+		object-position: 100% 45%; 
 	}
 	#repair-text{
 		width: 100%;
