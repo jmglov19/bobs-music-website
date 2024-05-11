@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Bob's Music</title>
         <link href="style.css" type="text/css" rel="stylesheet" >
     </head>
@@ -15,6 +16,10 @@
                 <a onclick="document.location='index.html'" id = logo-container>
                     <img src="imgs/BobsLogo-John-Recovered (1).png", id="logo">
                 
+                </a>
+
+                <a href="javascript:void(0);" id = "menu" class="icon" onclick="myFunction()" >
+                  <i class="fa fa-bars"></i>
                 </a>
             
 
@@ -39,6 +44,13 @@
 
            
         </header>
+        <div id="myLinks">
+          <a class="links" href="index.html"> Home </a>
+          <a class="links" href="index.html#repair-sect">Repairs</a>
+          <a class="links" href="rentals.html"> Rentals </a>
+          <a class="links" href="#rental-footer" onclick="myFunction()">Contact </a>
+    
+        </div>
 
         <div id ="rental-banner">
             <div id="rental-banner-text">
@@ -103,6 +115,17 @@
             </div>
         
           </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
 
     </body>
 </html>

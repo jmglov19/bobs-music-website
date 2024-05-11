@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bob's Music</title>
         <link href="style.css" type="text/css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src=
             "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
         </script>
@@ -26,7 +27,11 @@
                     <img src="imgs/BobsLogo-John-Recovered (1).png", id="logo">
                 
                 </a>
-            
+                
+                
+                <a href="javascript:void(0);" id = "menu" class="icon" onclick="myFunction()" >
+                  <i class="fa fa-bars"></i>
+                </a>
 
                 <nav>
                     <ul>
@@ -47,8 +52,19 @@
                     </ul>
                 </nav>
 
+               
+
            
         </header>
+
+        <div id="myLinks">
+          <a class="links" href="index.html"> Home </a>
+          <a class="links" href="#repair-sect" onclick="myFunction()">Repairs</a>
+          <a class="links" href="rentals.html"> Rentals </a>
+          <a class="links" href="#location" onclick="myFunction()" >Contact </a>
+  
+          
+        </div>
         <br>
 
         <img src="imgs/title_1.png" id="front">
@@ -84,7 +100,7 @@
 
 
     <section id="repair-sect">
-      <img src="imgs/IMG_0621.jpg" alt="Band Instrument Repairs"  id="repair-pic">
+      <img src="imgs/IMG_0621.jpg" alt="Band Instrument Repairs" decoding="sync"  id="repair-pic">
     <div id="repair-text">
       <h1 style="margin-left: 4px";> Shop Repairs</h1>
       <img src="imgs/BobsLogo-John-Recovered (1).png", id="renLogo" style="float: right;">
@@ -288,5 +304,16 @@ function showSlides(n) {
   </footer>
 
 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
     </body>
+
 </html>
